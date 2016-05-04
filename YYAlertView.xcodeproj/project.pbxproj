@@ -15,6 +15,8 @@
 		045588B01CD9DBB80070992B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045588AE1CD9DBB80070992B /* LaunchScreen.storyboard */; };
 		045588BB1CD9DBB80070992B /* YYAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045588BA1CD9DBB80070992B /* YYAlertViewTests.m */; };
 		045588C61CD9DBB80070992B /* YYAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045588C51CD9DBB80070992B /* YYAlertViewUITests.m */; };
+		045588D61CD9DBFE0070992B /* YYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045588D51CD9DBFE0070992B /* YYAlertView.m */; };
+		045588D81CD9DC0D0070992B /* YYAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045588D71CD9DC0D0070992B /* YYAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		045588C11CD9DBB80070992B /* YYAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045588C51CD9DBB80070992B /* YYAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAlertViewUITests.m; sourceTree = "<group>"; };
 		045588C71CD9DBB80070992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045588D41CD9DBFE0070992B /* YYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAlertView.h; sourceTree = "<group>"; };
+		045588D51CD9DBFE0070992B /* YYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAlertView.m; sourceTree = "<group>"; };
+		045588D71CD9DC0D0070992B /* YYAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		0455889F1CD9DBB70070992B /* YYAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				045588D31CD9DBDD0070992B /* YYAlert */,
 				045588A31CD9DBB70070992B /* AppDelegate.h */,
 				045588A41CD9DBB70070992B /* AppDelegate.m */,
 				045588A61CD9DBB70070992B /* ViewController.h */,
@@ -138,6 +144,16 @@
 				045588C71CD9DBB80070992B /* Info.plist */,
 			);
 			path = YYAlertViewUITests;
+			sourceTree = "<group>";
+		};
+		045588D31CD9DBDD0070992B /* YYAlert */ = {
+			isa = PBXGroup;
+			children = (
+				045588D41CD9DBFE0070992B /* YYAlertView.h */,
+				045588D51CD9DBFE0070992B /* YYAlertView.m */,
+				045588D71CD9DC0D0070992B /* YYAlertView.xib */,
+			);
+			name = YYAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045588B01CD9DBB80070992B /* LaunchScreen.storyboard in Resources */,
+				045588D81CD9DC0D0070992B /* YYAlertView.xib in Resources */,
 				045588AD1CD9DBB80070992B /* Assets.xcassets in Resources */,
 				045588AB1CD9DBB70070992B /* Main.storyboard in Resources */,
 			);
@@ -271,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045588A81CD9DBB70070992B /* ViewController.m in Sources */,
+				045588D61CD9DBFE0070992B /* YYAlertView.m in Sources */,
 				045588A51CD9DBB70070992B /* AppDelegate.m in Sources */,
 				045588A21CD9DBB70070992B /* main.m in Sources */,
 			);

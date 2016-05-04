@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YYAlertView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)alert:(UIButton *)sender
+{
+    YYAlertView * alertview = [YYAlertView creatXIB];
+    alertview.AlertTitle.text = @"请输入标题或者nil";
+    alertview.AlertContent.text = @"你敲代码了吗？";
+    [alertview setGetDetermine:^(int selectIndex)
+    {
+        NSLog(@"YY = %d",selectIndex);
+    }];
+    [alertview showXib];
 }
 
 - (void)didReceiveMemoryWarning {
